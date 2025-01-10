@@ -1,0 +1,267 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --hover: rgb(228, 228, 228);
+    --bgwhite: #ffffff;
+}
+body{
+    /* padding: .4rem; */
+   
+}
+
+#navbar{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgwhite);
+    position: sticky;
+    top: 0;
+    
+}
+#branding{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* padding: .5rem 1rem; */
+
+}
+#hamburger{
+   cursor: pointer;
+   padding: .5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+}
+
+#hamburger:hover{
+    background-color: var(--hover)
+}
+
+#searching{
+    display: flex;
+    gap: 1rem;
+}
+#search{
+    display: flex;
+}
+#search>input{
+    width: 30rem;
+    height: 2.2rem;
+    outline: none;
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    font-size: large;
+    padding-left: 1rem;
+}
+
+#search>input:focus{
+    border: 1px solid rgb(48, 48, 255);
+}
+#searchIcon{
+    width: 4rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-left: none;
+    border-radius: 0rem 1.5rem 1.5rem 0rem;
+}
+#voice{
+    background-color: rgba(228, 228, 228, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#voice>img{
+    width: .8rem;
+    mix-blend-mode: color-burn;
+}
+
+#creative{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#createIcon{
+    background-color: rgba(228, 228, 228, 0.555);
+    width: 7rem;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    height: 2.3rem;
+    border-radius: 1.5rem;
+}
+#createIcon>img{
+    mix-blend-mode: multiply;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#createIcon>p{
+    font-weight: 500;
+    font-size: small;
+}
+#notifi{
+    width: 1.5rem;
+    padding: .5rem;
+    border-radius: 50%;
+    
+
+}
+#notifi:hover{
+    background-color: rgba(228, 228, 228, 0.555);
+    cursor: pointer;
+}
+
+#profile{
+    font-size: large;
+    font-weight: 600;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* navbar ends here */
+.totalContainer{
+    display: flex;
+}
+/* sidebar starts here */
+.sidebar{
+    height: 100%;
+    overflow-y: scroll;
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home{
+    background-color: rgba(228, 228, 228, 0.555);
+}
+.container{
+   
+    width: 80%;
+    height: 2.5rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .7rem;
+    padding-left: .7rem;
+}
+.container:hover{
+    background-color: rgba(228, 228, 228, 0.555);
+
+}
+.img{
+    width: 11%;
+    
+}
+.container>p{
+    font-size: .9rem;
+    font-weight: 500;
+    width: 80%;
+}
+.line{
+    width: 90%;
+    margin: 1rem auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.144);
+}
+.sideheading{
+    width: 80%;
+    margin: 1rem 0rem;
+}
+/* sidebar ends here */
+
+.contentsContainer{
+    width: 80%;
+    height: 100vh;
+    padding-left: 2rem;
+}
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category{
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .4rem .7rem;
+    background-color: rgba(228, 228, 228, 0.555);
+    border-radius: .4rem;
+}
+.all{
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+/* content starts here */
+.contents{
+    margin-top: 1.5rem;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    
+}
+.content{
+    width: 20rem;
+    /* height: 8rem; */
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+.thumbnail>img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.channelImg>img{
+    width: 2.2rem;
+    border-radius: 50%;
+}
+.menu{
+    width: 1.5rem;
+}
+.des{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    width: 100%;
+}
+.title>p{
+    font-weight: 600;
+}
+.morecontainer{
+    display: flex;
+    gap: .5rem;
+}
+.small{
+    font-size: small;
+}
+.desContent{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
