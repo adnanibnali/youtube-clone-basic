@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 
 :root{
     --hover: rgb(228, 228, 228);
@@ -229,9 +232,10 @@
     margin-top: 1.5rem;
     display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     
 }
+
 .content{
     width: 20rem;
     /* height: 8rem; */
