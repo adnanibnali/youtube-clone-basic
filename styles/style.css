@@ -201,6 +201,8 @@ body{
     padding-left: 2rem;
 }
 .categories{
+    width: 100rem;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -264,4 +266,11 @@ body{
     display: flex;
     flex-direction: column;
     gap: .3rem;
+}
+
+/* responsive */
+@media screen and (min-width:1730px) {
+    .contents{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
